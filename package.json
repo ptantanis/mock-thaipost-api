@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc",
-    "start": "node lib/server.js",
+    "start": "ts-node src/server.ts",
     "build": "tsc -p .",
-    "start:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' lib/server.ts"
+    "start:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts"
   },
   "repository": {
     "type": "git",
